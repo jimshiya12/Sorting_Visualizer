@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Required Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="sorting.css">
+    <title>javascript_Sorting_visualizer</title>
+</head>
+<header>
+    <h2 align="center">Sorting Visualizer</h2>
+    <nav class="navbar navbar-expand-lg p-3 ">
+        <div class="row">
+            <div class="col d-flex " id="newArray">
+                <button type="button" class="btn btn-info float-left newArray">New array</button>
+            </div>
+
+            <div class="col" id="input">
+                <span id="size">Size
+                    <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
+                </span>
+                <span id="speed">Speed
+                    <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+                </span>
+            </div>
+            <div class="col gap-1 d-flex  justify-content-end" id="input">
+                <button id=sort type="button" class="btn btn-info float-right ml-5 bubbleSort">Bubble sort</button>
+                <button id=sort type="button" class="btn btn-info float-right mergeSort">Merge sort</button>
+                <button id=sort type="button" class="btn btn-info float-right insertionSort">Insertion sort</button>
+                <button id=sort type="button" class="btn btn-info float-right quickSort">Quick sort</button>
+                <button id=sort type="button" class="btn btn-info float-right selectionSort">Selection sort</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body class "p-3 mb-2 bg-dark text-white">
+
+    <div id="bars" class="flex-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js_files/sorting.js"></script>
+    <script src="js_files/bubble.js"></script>
+    <script src="js_files/insertion.js"></script>
+    <script src="js_files/merge.js"></script>
+    <script src="js_files/quick.js"></script>
+    <script src="js_files/selection.js"></script>
+
+</body>
+
+</html>
